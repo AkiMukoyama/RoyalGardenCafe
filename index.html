@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="./slick-theme.css" rel="stylesheet" type="text/css">
+<link href="./slick.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script type="text/javascript" src="./slick.min.js"></script>
+    <title>RoyalGardenCafe</title>
+    
+  </head>
+  <body>
+
+    <header class="page-header">
+        <div class="header_menu">
+            <div class="header_logo"><img src="./img/cmn_logo01_bk.svg"></div>
+            <div class="header_menu_block">
+                <ul class="header_list">
+                    <li><a href="#">TOP</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">NEWS</a></li>
+                        <ul class="news_list">
+                            <li>AOAYAMA</li>
+                            <li>SHIBUYA</li>    
+                            <li>IIDABASHI</li>    
+                            <li>MEJIRO</li>    
+                            <li>NAGOYA</li>    
+                            <li>OHORI PARK</li>    
+                            <li>Q CAFE</li>    
+                            <li>TENJIN</li>    
+                            <li>TOYOSU</li>    
+                        </ul>
+                    <li><a href="#">STORE</a></li>
+                     <ul class="store_list">
+                            <li>AOAYAMA</li>
+                            <li>SHIBUYA</li>    
+                            <li>IIDABASHI</li>    
+                            <li>MEJIRO</li>    
+                            <li>NAGOYA</li>    
+                            <li>OHORI PARK</li>    
+                            <li>Q CAFE</li>    
+                            <li>TENJIN</li>    
+                            <li>TOYOSU</li>    
+                        </ul>
+                    <li><a href="#">PROMOTION</a></li>
+                </ul>
+            </div>
+        </div>
+     
+    </header>
+
+    <main class="main-content">
+    <section class=mainvisual>
+         <ul class="slider">
+    <li><a href="#"><img src="./img/11111-720x400.jpg" alt="image01"></a></li>
+    <li><a href="#"><img src="./img/mainimg_nagoya004.jpg" alt="image02"></a></li>
+    <li><a href="#"><img src="./img/mainimg_qcafe002-720x400.jpg" alt="image03"></a></li>
+    <li><a href="#"><img src="./img/top_mainimg001.jpg" alt="image04"></a></li>
+    <li><a href="#"><img src="./img/top_mainimg005.jpg" alt="image05"></a></li>
+    
+</ul>
+</section>
+<section class="top_news">
+    <div class="contentIn">
+    <div class="txt"><p>“Royal Garden Cafe” は、<br>これからの時代の”地域の皆様になくてはならないお店”を目指し、<br>
+「永続的（Sustainable）な街のコミュニティ基盤」となる<br>店舗の実現を目指しています。</p>
+</div>
+<div class="news_block">
+    <h3>NEWS</h3>
+    <ul class="">
+  
+　　　<li class="news_box">
+            <div class="left_box"><img src="./img/1_rgcinfo.jpg" width="112px"></div>
+            <div class="right_box">【9/6短縮営業と9/7臨時休業のお知らせ】</div>
+        </li>
+        <li class="news_box">
+            <div class="left_box"><img src="./img/1_rgcinfo.jpg" width="112px"></div>
+            <div class="right_box">9月5日より土日祝日限定でモーニングを開始します！！</div>
+        </li>
+        <li class="news_box">
+            <div class="left_box"><img src="./img/1_rgcinfo.jpg" width="112px"></div>
+            <div class="right_box">【9/2 台風9号接近に伴う閉店時間変更のお知らせ】</div>
+        </li>
+        
+        
+        <li class="news_box">
+            <div class="left_box"><img src="./img/1_rgcinfo.jpg" width="112px"></div>
+            <div class="right_box">8月30日営業時間変更のお知らせ</div>
+        </li>
+       
+        <li class="news_box">
+            <div class="left_box"><img src="./img/1_rgcinfo.jpg" width="112px"></div>
+            <div class="right_box">【9月営業時間のお知らせ】</div>
+        </li>
+         <li class="news_box">
+            <div class="left_box"><img src="./img/1_rgcinfo.jpg" width="112px"></div>
+            <div class="right_box">ロイヤルガーデンカフェ目白　閉店のお知らせ</div>
+        </li>
+        
+    </ul>
+</div>
+</div>
+</section>
+    </main>
+
+    <footer class="page-footer">
+    </footer>
+ <script>
+   $(function(){
+$('.slider').slick({
+    autoplay:true,
+    autoplaySpeed:5000,
+    dots:true,
+});
+});
+       
+   </script>
+   <style>
+   
+   .slider{
+    
+    transition: 3s;
+}
+
+.slider img{
+    height: auto;
+    width: 100%;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+.header_menu {
+    height: 161px;
+    position: fixed;
+    top: 0;
+    background: url(./img/bg_paper01.jpg) center top;
+    width: 100%;
+    z-index:10;
+    line-height: 85px;
+}
+.header_logo{text-align:center;}
+.header_list{    display: flex;
+    list-style: none;    width: 705px;
+    margin: 0 auto;}
+.header_list > li{width: 141px;text-decoration:none;}
+.header_list > li a{text-decoration:none;}
+.news_list,.store_list{display:none;}
+.news_box{width:280px;    list-style: none;display:flex; width:33%;}
+.left_box{width:40%;}
+.right_box{width:57%;}
+.contentIn{width:920px;    margin: 0 auto;}
+.table_row{display:flex;}
+.contentIn .txt p{text-align:center;}
+.news_block h3{text-align:center;}
+   </style>
+  </body>
+</html>
